@@ -4,13 +4,14 @@
   "description": "## Índice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "pretest": "eslint --ignore-path .gitignore . --ext .js lib/ --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erickalemos/SAP003-md-links.git"
   },
-  "author": "",
+  "author": "Ericka Lemos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/erickalemos/SAP003-md-links/issues"
@@ -18,5 +19,11 @@
   "homepage": "https://github.com/erickalemos/SAP003-md-links#readme",
   "bin": {
     "md-links": "./lib/cli.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "install": "^0.13.0",
+    "jest": "^24.9.0"
   }
+
 }
