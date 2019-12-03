@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-const mdLinks = require('../SAP003-md-links/lib/index.js');
+const mdLinks = require('./lib/index.js');
 
 const path = process.argv[2]
 
